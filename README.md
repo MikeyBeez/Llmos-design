@@ -21,34 +21,36 @@ Treat the LLM like a CPU. It does the thinking. An operating system around it de
 
 ## The pieces
 
-**1. Agents are users.**
+Each piece has its own page in [docs/](docs/) with examples and open questions. The examples there are one way each piece could work. They are meant to be argued with.
+
+**1. Agents are users.** ([details](docs/01-agents-are-users.md))
 Every agent is a user on the system, with a user ID and groups, the same as a person on a Unix machine. Each agent lives in a namespace under the human who owns it. A human who wants to use a specific capability of an agent has to be in that agent's group for it.
 
-**2. Tools are files.**
+**2. Tools are files.** ([details](docs/02-tools-are-files.md))
 Every tool and every protocol is a file with an owner and permissions. An agent can run a tool only if the permissions allow it. An agent does not get web search, or anything else, just because it exists. Sub-agents must be called on purpose.
 
-**3. Every tool call is checked.**
+**3. Every tool call is checked.** ([details](docs/03-checked-tool-calls.md))
 A tool call works like a Unix system call. Something outside the model checks permissions and takes any needed locks before the tool runs. A command never just runs. It runs inside the checking apparatus.
 
-**4. Locks.**
+**4. Locks.** ([details](docs/04-locks.md))
 Only one writer at a time. Two agents can't silently clobber the same file.
 
-**5. Everything is done through forms.**
+**5. Everything is done through forms.** ([details](docs/05-forms-only.md))
 The agent doesn't free-write commands. If the next step needs a form filled out, filling out that form is the only thing the agent can do. The model sits outside the trust boundary. It never touches the actuators directly.
 
-**6. Elevation is its own permission.**
+**6. Elevation is its own permission.** ([details](docs/06-elevation.md))
 When one function calls another, the called function runs with its own higher permissions only if that is allowed. Being able to raise permissions is itself a permission.
 
-**7. Defaults.**
+**7. Defaults.** ([details](docs/07-defaults.md))
 Every agent starts with safe default settings. The owner can change them. If you don't know enough to change a setting, you probably shouldn't.
 
-**8. Roles are set when the agent is built.**
+**8. Roles are set when the agent is built.** ([details](docs/08-roles.md))
 An agent-building tool defines the agent's role groups, like manager and worker roles in a company department. Permissions follow from the role.
 
-**9. Tools load in layers.**
+**9. Tools load in layers.** ([details](docs/09-layered-tools.md))
 Tools are arranged in a tree, so they don't all crowd into the context window. Picking a tool can happen in a separate context window. Only the request and the answer come back to the main one.
 
-**10. Chat that can't act can run fast.**
+**10. Chat that can't act can run fast.** ([details](docs/10-fast-chat.md))
 A plain chat tool that calls no other tools can skip the checking apparatus. It's safe because it runs as a different user with no tool permissions at all.
 
 ## Why not a sandbox?
