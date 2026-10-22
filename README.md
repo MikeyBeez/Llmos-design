@@ -53,15 +53,26 @@ Tools are arranged in a tree, so they don't all crowd into the context window. P
 **10. Chat that can't act can run fast.** ([details](docs/10-fast-chat.md))
 A plain chat tool that calls no other tools can skip the checking apparatus. It's safe because it runs as a different user with no tool permissions at all.
 
+## Start here
+
+- [Walkthrough](docs/walkthrough.md): one task followed through every piece, start to finish.
+- [Attacks and what stops them](docs/attacks.md): ten ways agents go wrong, and which piece blocks each.
+- [Sandbox vs. OS](docs/sandbox-vs-os.md): what a sandbox covers and what it leaves out.
+- [Build order](docs/build-order.md): which piece to build first.
+- [Open questions](docs/open-questions.md): every unsolved question in one list. Pick one.
+- [Article series](docs/article-series.md): planned Medium articles, one per idea.
+
 ## Why not a sandbox?
 
-A sandbox is a wall. It says what's outside the agent's reach. It doesn't say who owns the agent, who can change its rights, or how two agents share a file. Ownership is the piece sandboxes are missing. Tools like NVIDIA OpenShell come close, but they are harnesses, not operating systems.
+A sandbox is a wall. It says what's outside the agent's reach. It doesn't say who owns the agent, who can change its rights, or how two agents share a file. Ownership is the piece sandboxes are missing. Tools like NVIDIA OpenShell come close, but they are harnesses, not operating systems. ([More](docs/sandbox-vs-os.md))
 
 ## Open questions
 
 - Who is allowed to change permissions?
 - Who sets the system-wide defaults? (Possibly government, for what any agent may do by default.)
 - How does an agent earn more access? The proposal: by track record over time, not a one-time test and not by who the user is.
+
+[All open questions](docs/open-questions.md)
 
 ## What exists today
 
