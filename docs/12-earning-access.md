@@ -46,7 +46,7 @@ No one agency holds all the keys.
 
 ## Read more
 
-- The Medium article on this idea: https://medium.com/@mbonsign
+- The article on this idea: [We Have Nothing. Messy Beats Nothing.](https://www.linkedin.com/pulse/we-have-nothing-messy-beats-michael-bonsignore-yi2oc/)
 
 ## Open questions
 

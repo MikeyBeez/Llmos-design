@@ -5,7 +5,7 @@ Planned Medium articles, one per idea. Each one stands alone and links back here
 **Published**
 
 - "Agents Should Be Users." Agents as OS users under their human owner. (Piece 1)
-- The badges article. Earning access by track record, sending badges instead of work. ([Earning access](12-earning-access.md))
+- [The badges article](https://www.linkedin.com/pulse/we-have-nothing-messy-beats-michael-bonsignore-yi2oc/) (LinkedIn). Earning access by track record, sending badges instead of work. ([Earning access](12-earning-access.md))
 
 **Planned**
 
