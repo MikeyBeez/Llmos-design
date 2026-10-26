@@ -4,9 +4,9 @@
 
 ## The big ones
 
-1. **Who is allowed to change permissions?** If an agent can change its own, nothing else holds. If only humans can, how does a busy human keep up? ([Elevation](06-elevation.md))
+1. **Who is allowed to change permissions?** If an agent can change its own, nothing else holds. If only humans can, how does a busy human keep up? ([Elevation](06-elevation.md)) A first answer: changes are forms someone else signs, sized small, big, and biggest. ([Changing permissions](11-changing-permissions.md))
 2. **Who sets the system-wide defaults?** The machine, the owner, or the law? One position: government sets the baseline for what any agent may do by default. ([Defaults](07-defaults.md))
-3. **How does an agent earn more access?** The proposal: by track record over time. Not a one-time test, which an AI can pass for you. Not by who the user is, which gets it wrong too often.
+3. **How does an agent earn more access?** The proposal: by track record over time. Not a one-time test, which an AI can pass for you. Not by who the user is, which gets it wrong too often. A first answer: badges for kinds of work. ([Earning access](12-earning-access.md))
 
 ## Agents as users
 
@@ -56,3 +56,17 @@
 
 21. Can the chat user hand a task to a checked agent, and does that hand-off need a check? ([10](10-fast-chat.md))
 22. Should the chat user be able to read anything, or nothing at all? ([10](10-fast-chat.md))
+
+## Changing permissions
+
+23. Who decides which changes are small? ([11](11-changing-permissions.md))
+24. Should requests be rate-limited, so an agent can't wear its owner down? ([11](11-changing-permissions.md))
+25. Can a signer be another agent with a manager role, or must every big change end with a human? ([11](11-changing-permissions.md))
+26. How much track record is enough for auto-signing, and can one bad call reset it? ([11](11-changing-permissions.md))
+
+## Earning access
+
+27. What counts as a "kind of work," and who writes the list of badges? ([12](12-earning-access.md))
+28. How is a badge made hard to fake or copy? ([12](12-earning-access.md))
+29. Can a badge be taken away, and who decides? ([12](12-earning-access.md))
+30. Who keeps track of badges without seeing the work behind them? ([12](12-earning-access.md))

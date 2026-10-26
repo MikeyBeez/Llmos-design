@@ -53,6 +53,12 @@ Tools are arranged in a tree, so they don't all crowd into the context window. P
 **10. Chat that can't act can run fast.** ([details](docs/10-fast-chat.md))
 A plain chat tool that calls no other tools can skip the checking apparatus. It's safe because it runs as a different user with no tool permissions at all.
 
+**11. Changing permissions is a form.** ([details](docs/11-changing-permissions.md))
+Nobody changes their own permissions. An agent fills out a change form, and someone else signs it. Small changes can be signed automatically for an agent with a good track record. Big ones need the owner. Every grant runs out.
+
+**12. Access is earned.** ([details](docs/12-earning-access.md))
+Everyone starts on a weaker model. People move up by earning badges for kinds of work over time. They send the badges, not the work, so privacy is kept.
+
 ## Start here
 
 - [Walkthrough](docs/walkthrough.md): one task followed through every piece, start to finish.
@@ -68,9 +74,9 @@ A sandbox is a wall. It says what's outside the agent's reach. It doesn't say wh
 
 ## Open questions
 
-- Who is allowed to change permissions?
+- Who is allowed to change permissions? (A first answer: [Changing permissions](docs/11-changing-permissions.md).)
 - Who sets the system-wide defaults? (Possibly government, for what any agent may do by default.)
-- How does an agent earn more access? The proposal: by track record over time, not a one-time test and not by who the user is.
+- How does an agent earn more access? The proposal: by track record over time, not a one-time test and not by who the user is. ([Earning access](docs/12-earning-access.md))
 
 [All open questions](docs/open-questions.md)
 

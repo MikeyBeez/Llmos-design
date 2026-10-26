@@ -33,5 +33,5 @@ Example:
 
 ## Open questions
 
-- **Who can change permissions?** This is the next big open piece. If an agent can change its own permissions, none of this means anything. If only humans can, how does a busy human keep up?
+- **Who can change permissions?** This is the next big open piece. If an agent can change its own permissions, none of this means anything. If only humans can, how does a busy human keep up? A first answer is on [Changing permissions](11-changing-permissions.md).
 - Can elevation chain? If an elevated tool calls another elevated tool, whose rules apply?
